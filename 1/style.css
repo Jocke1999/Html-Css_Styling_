@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+  color: transparent;
+}
+
+body > div {
+  transition: background-color 1s, border-radius 1s;
+  height: 300px;
+  width: 300px;
+  place-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: black;
+  border-radius: 50%;
+}
+
+body > div:hover {
+  background-color: grey;
+  border-radius: 0px;
+}
+
+body > div > div:nth-child(1) {
+  border: 8px solid transparent;
+  color: transparent;
+  transition: color 1s 1s, border 1s 1s;
+  padding: 30px;
+  font-size: 40px;
+}
+
+body > div > div:nth-child(2) {
+  border: 8px solid transparent;
+  color: transparent;
+  transition: color 1s 2s, border 1s 2s;
+  padding: 30px;
+  font-size: 40px;
+}
+
+body > div > div:nth-child(3) {
+  border: 8px solid transparent;
+  color: transparent;
+  transition: color 1s 3s, border 1s 3s;
+  padding: 30px;
+  font-size: 40px;
+}
+
+body > div > div:nth-child(4) {
+  border: 8px solid transparent;
+  color: transparent;
+  transition: color 1s 4s, border 1s 4s;
+  padding: 30px;
+  font-size: 40px;
+}
+
+body > div:hover > div:nth-child(1) {
+  transition: color 1s 1s, border 1.5s 1.5s;
+  border: 8px solid lightgray;
+  color: yellow;
+  padding: 30px;
+  font-size: 40px;
+}
+
+body > div:hover > div:nth-child(2) {
+  transition: color 2s 2s, border 2.5s 2.5s;
+  border: 8px solid lightgray;
+  color: yellow;
+  padding: 30px;
+  font-size: 40px;
+}
+
+body > div:hover > div:nth-child(3) {
+  transition: color 3s 3s, border 3.5s 3.5s;
+  border: 8px solid lightgray;
+  color: yellow;
+  padding: 30px;
+  font-size: 40px;
+}
+
+body > div:hover > div:nth-child(4) {
+  transition: color 4s 4s, border 4.5s 4.5s;
+  border: 8px solid lightgray;
+  color: yellow;
+  padding: 30px;
+  font-size: 40px;
+}
